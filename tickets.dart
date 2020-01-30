@@ -1,4 +1,5 @@
 class Tickets {
+  final bool anadoluJet;
   final String date;
   final String departureHour;
   final String departure;
@@ -25,8 +26,9 @@ class Tickets {
       this.arrivalAirportFullName,
       this.airline,
       this.flightNumber,
-      this.aircraft
-      this.estimatedTime});
+      this.aircraft,
+      this.estimatedTime,
+      this.anadoluJet});
 }
 
 List<Tickets> tickets = [
@@ -43,7 +45,8 @@ List<Tickets> tickets = [
       arrivalAirportFullName: 'John F. Kennedy Uluslararası Havalimanı',
       airline: 'Türk Hava Yolları',
       flightNumber: 'TK0003',
-      aircraft: 'Boeing 777-300ER'),
+      aircraft: 'Boeing 777-300ER',
+      anadoluJet: false),
   Tickets(
       date: '29 OCAK 2020',
       departureHour: '08:10',
@@ -57,7 +60,8 @@ List<Tickets> tickets = [
       arrivalAirportFullName: 'İzmir Adnan Menderes Havalimanı',
       airline: 'AnadoluJet',
       flightNumber: 'TK0003',
-      aircraft: 'Boeing B373-8FH'),
+      aircraft: 'Boeing B373-8FH',
+      anadoluJet: true),
   Tickets(
       date: '29 OCAK 2020',
       departureHour: '02:20',
@@ -71,5 +75,6 @@ List<Tickets> tickets = [
       arrivalAirportFullName: 'Incheon Uluslararası Havalimanı',
       airline: 'Türk Hava Yolları',
       flightNumber: 'TK0003',
-      aircraft: 'Boeing B777-300ER'),
+      aircraft: 'Boeing B777-300ER',
+      anadoluJet: false),
 ];
