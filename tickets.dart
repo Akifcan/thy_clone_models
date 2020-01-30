@@ -11,6 +11,7 @@ class Tickets {
   final String airline;
   final String flightNumber;
   final String aircraft;
+  final String estimatedTime;
 
   Tickets(
       {this.date,
@@ -24,17 +25,19 @@ class Tickets {
       this.arrivalAirportFullName,
       this.airline,
       this.flightNumber,
-      this.aircraft});
+      this.aircraft
+      this.estimatedTime});
 }
 
 List<Tickets> tickets = [
   Tickets(
       date: '29 OCAK 2020',
       departureHour: '08:10',
+      arrivalHour: '16: 10',
       departure: 'IST',
       departureAirportFullName: 'İstanbul Havalimanı',
       departureCity: 'İstanbul',
-      arrivalHour: '11 sa 40 dk',
+      estimatedTime: '11 sa 40 dk',
       arrival: 'JFK',
       arrivalCity: 'New York',
       arrivalAirportFullName: 'John F. Kennedy Uluslararası Havalimanı',
@@ -47,7 +50,8 @@ List<Tickets> tickets = [
       departure: 'ESB',
       departureAirportFullName: 'Ankara Esenboğa Havalimanı',
       departureCity: 'Ankara',
-      arrivalHour: '1 sa 20 dk',
+      arrivalHour: '9:10',
+      estimatedTime: '1 sa 20 dk',
       arrival: 'ADB',
       arrivalCity: 'İzmir',
       arrivalAirportFullName: 'İzmir Adnan Menderes Havalimanı',
@@ -60,7 +64,8 @@ List<Tickets> tickets = [
       departure: 'IST',
       departureAirportFullName: 'İstanbul Havalimanı',
       departureCity: 'İstanbul',
-      arrivalHour: '10 sa 10 dk',
+      arrivalHour: '11:20',
+      estimatedTime: '10 sa 10 dk',
       arrival: 'ICN',
       arrivalCity: 'Seul',
       arrivalAirportFullName: 'Incheon Uluslararası Havalimanı',
