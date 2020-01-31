@@ -1,5 +1,6 @@
 class Tickets {
   final bool anadoluJet;
+  final double price;
   final String date;
   final String departureHour;
   final String departure;
@@ -28,7 +29,9 @@ class Tickets {
       this.flightNumber,
       this.aircraft,
       this.estimatedTime,
-      this.anadoluJet});
+      this.anadoluJet,
+      this.price
+      });
 }
 
 List<Tickets> tickets = [
@@ -46,7 +49,8 @@ List<Tickets> tickets = [
       airline: 'Türk Hava Yolları',
       flightNumber: 'TK0003',
       aircraft: 'Boeing 777-300ER',
-      anadoluJet: false),
+      anadoluJet: false,
+      price: 2.646),
   Tickets(
       date: '29 OCAK 2020',
       departureHour: '08:10',
@@ -61,7 +65,8 @@ List<Tickets> tickets = [
       airline: 'AnadoluJet',
       flightNumber: 'TK0003',
       aircraft: 'Boeing B373-8FH',
-      anadoluJet: true),
+      anadoluJet: true,
+      price: 120.0),
   Tickets(
       date: '29 OCAK 2020',
       departureHour: '02:20',
@@ -76,5 +81,7 @@ List<Tickets> tickets = [
       airline: 'Türk Hava Yolları',
       flightNumber: 'TK0003',
       aircraft: 'Boeing B777-300ER',
-      anadoluJet: false),
+      anadoluJet: false,
+      price: 2000.00),
 ];
+
